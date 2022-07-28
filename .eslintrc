@@ -1,0 +1,43 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint", "jsx-a11y"],
+    "extends": [
+        "airbnb",
+        "airbnb-typescript",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:jsx-a11y/strict"
+    ],
+    "rules": {
+        "max-len": ["error", 150],
+        "indent": "off",
+        "@typescript-eslint/indent": ["error", 4],
+        "react/jsx-indent": "off",
+        "react/jsx-indent-props": "off",
+        "linebreak-style": "off",
+        "quotes": ["error", "single"],
+        "@typescript-eslint/quotes": ["error", "single"],
+        "@typescript-eslint/naming-convention": "off",
+        "@typescript-eslint/comma-dangle": "off",
+        "@typescript-eslint/no-var-requires": "off",
+        "import/no-extraneous-dependencies": "off",
+        "no-plusplus": "off",
+        "react/function-component-definition": [
+            2,
+            {
+                "namedComponents": "arrow-function",
+                "unnamedComponents": "arrow-function"
+            }
+        ],
+        "react/require-default-props": "off",
+        "react/no-children-prop": "off",
+        "eqeqeq": "off",
+        "react/jsx-no-useless-fragment": "off",
+        "react/jsx-no-constructed-context-values": "off"
+    },
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "ignorePatterns": ["src/**/*.test.ts", "src/**/*.test.js"]
+}
