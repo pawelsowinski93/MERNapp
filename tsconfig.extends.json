@@ -1,0 +1,10 @@
+{
+    "extends": "./tsconfig.json",
+    "include": [
+        // ...
+        "babel.config.js",
+        "webpack.config.js",
+        "webpack.prod.js",
+        "webpack.dev.js"
+    ]
+}
